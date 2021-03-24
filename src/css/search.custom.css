@@ -1,0 +1,23 @@
+button {
+    margin: 0 0.5%;
+    font-size: 20px;    
+}
+button:hover {
+    background-color: rgb(78, 67, 67);
+    color: white;
+}
+input {
+    width: 40%;
+    font-size: 18px;
+    border: 1px solid rgb(53, 19, 19);
+    
+    border-radius: 5px;            
+}
+input:focus {
+    box-shadow: 0 0 20px;
+}
+.search {
+    padding: 1%;
+    display: flex;
+    justify-content: center;    
+}

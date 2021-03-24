@@ -1,0 +1,17 @@
+.movieList {    
+    text-align: center;    
+}
+.movies {
+    display: flex;
+    margin: 2em;
+    flex: 0 1 100%;
+    flex-wrap: wrap;    
+    align-items: flex-start;
+    justify-content: space-evenly;
+        
+}
+@media screen and (max-width: 500px) {
+    .movies > * {
+        flex-basis: 100%;
+    }
+}

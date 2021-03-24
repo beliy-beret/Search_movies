@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+}
+.app {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    background-color: rgb(109, 102, 141);
+    height: 100%;
+    min-height: 100vh;    
+}

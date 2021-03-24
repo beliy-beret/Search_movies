@@ -1,0 +1,12 @@
+.movie {    
+    margin: 1em;
+    border-radius: 10px;
+    border: 1px solid wheat;
+    width: 20%;        
+}
+.movie h3 {
+    margin: 1em;
+}
+.movie img {
+    width: 100%;    
+}
