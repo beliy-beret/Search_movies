@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Search_movies/static/css/main.abce6c19.chunk.css",
+    "main.js": "/Search_movies/static/js/main.e3da64d5.chunk.js",
+    "main.js.map": "/Search_movies/static/js/main.e3da64d5.chunk.js.map",
+    "runtime-main.js": "/Search_movies/static/js/runtime-main.d0ec51f6.js",
+    "runtime-main.js.map": "/Search_movies/static/js/runtime-main.d0ec51f6.js.map",
+    "static/js/2.0107346d.chunk.js": "/Search_movies/static/js/2.0107346d.chunk.js",
+    "static/js/2.0107346d.chunk.js.map": "/Search_movies/static/js/2.0107346d.chunk.js.map",
+    "static/js/3.fdc5bb3a.chunk.js": "/Search_movies/static/js/3.fdc5bb3a.chunk.js",
+    "static/js/3.fdc5bb3a.chunk.js.map": "/Search_movies/static/js/3.fdc5bb3a.chunk.js.map",
+    "index.html": "/Search_movies/index.html",
+    "static/css/main.abce6c19.chunk.css.map": "/Search_movies/static/css/main.abce6c19.chunk.css.map",
+    "static/js/2.0107346d.chunk.js.LICENSE.txt": "/Search_movies/static/js/2.0107346d.chunk.js.LICENSE.txt",
+    "static/media/preloader.cf3a4a26.gif": "/Search_movies/static/media/preloader.cf3a4a26.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d0ec51f6.js",
+    "static/js/2.0107346d.chunk.js",
+    "static/css/main.abce6c19.chunk.css",
+    "static/js/main.e3da64d5.chunk.js"
+  ]
+}
