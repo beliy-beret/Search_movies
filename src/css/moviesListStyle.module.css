@@ -2,16 +2,9 @@
     text-align: center;    
 }
 .moviesList {
-    display: flex;
-    margin: 2em;
-    flex: 0 1 100%;
-    flex-wrap: wrap;    
-    align-items: flex-start;
-    justify-content: space-evenly;
-        
-}
-@media screen and (max-width: 500px) {
-    .moviesList > * {
-        flex-basis: 100%;
-    }
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 20%));
+    grid-gap: 1rem;    
+    justify-content: space-around;        
 }

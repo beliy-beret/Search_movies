@@ -1,12 +1,21 @@
 .movie {    
-    margin: 1em;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr auto;   
     border-radius: 10px;
-    border: 1px solid wheat;
-    width: 20%;        
+    border: 1px solid wheat;                
 }
 .title {
     margin: 1em;
+    grid-column: 1;
+    grid-row: 1;
+}
+.poster{
+    width: 100%;    
 }
 .poster img {
-    width: 100%;    
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;        
 }
