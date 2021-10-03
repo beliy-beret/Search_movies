@@ -16,17 +16,19 @@ const App = () => {
   const handlerSearchingValue = (e: React.ChangeEvent<HTMLInputElement>) => setSearchingValue(e.target.value);
   
   const getSearchingValue = async() => {
-    await setLoading(true);
-    axios.get(`https://www.omdbapi.com/?s=${searchingValue.split(' ').join('+')}&apikey=4a3b711b`)     
-    .then( response => { 
-      if (response.data.Response === "True") {
-        setSearch(response.data.Search);        
+    setLoading(true);
+    let res = await axios.get('https://www.omdbapi.com/', {
+      params:{
+        s: searchingValue.split(' ').join('+'),
+        apikey: '4a3b711b'
+      }
+    })     
+    if (res.data.Response === "True") {
+        setSearch(res.data.Search);        
       } else {
-        alert(response.data.Error)
+        alert(res.data.Error)
       } setLoading(false);
-    });        
-  }  
-
+    }    
   return (       
     <div className='app'>      
       <Header />

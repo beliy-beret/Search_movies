@@ -1,6 +1,6 @@
-import { MovieListType } from "./AppTypes"
+import { MoviesListType } from "./AppTypes"
 
-export const initData: MovieListType = [
+export const initData: MoviesListType = [
     {
         "Title": "Iron Man",
         "Year": "2008",
