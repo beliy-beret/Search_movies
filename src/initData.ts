@@ -1,13 +1,5 @@
-export type MovieType = {
-    "Title": string
-    "Year": string,
-    "imdbID": string,
-    "Type": string,
-    "Poster": string
-}
+import { MovieListType } from "./AppTypes"
 
-export type MovieListType = MovieType[]
- 
 export const initData: MovieListType = [
     {
         "Title": "Iron Man",
