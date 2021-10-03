@@ -1,11 +1,13 @@
-import axios from "axios";
-import { useState } from "react";
-import { Header } from "./components/Header";
-import MovieList from "./components/MovieList";
-import Search from "./components/Search";
+import axios from "axios"
+import { useState } from "react"
+import { initData } from "./initData"
+
+import { Header } from "./components/Header"
+import { MovieList } from "./components/MovieList"
 import { Loading } from "./components/Loading"
-import './css/app.custom.css';
-import { initData } from "./initData";
+import { Search } from "./components/Search"
+
+import './css/app.custom.css'
 
 const App = () => {  
   const [search, setSearch] = useState(initData);
@@ -29,7 +31,7 @@ const App = () => {
     <div className='app'>      
       <Header />
       <Search searchingValue={searchingValue} handlerSearchingValue={handlerSearchingValue} getSearchingValue={getSearchingValue} />
-      {loading ? <Loading /> : <MovieList movies={search} />}
+      {loading ? <Loading /> : <MovieList moviesList={search} />}
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import style from '../css/movie.module.css'
+import style from '../css/movieStyle.module.css'
 
 export const Movie = ({ title, year, poster }: { title: string, year: string, poster: string }) => (
     <div className={style.movie}>

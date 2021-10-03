@@ -6,4 +6,4 @@ export type MovieType = {
     "Poster": string
 }
 
-export type MovieListType = MovieType[]
+export type MoviesListType = MovieType[]
