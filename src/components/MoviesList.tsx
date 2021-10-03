@@ -2,7 +2,7 @@ import { MoviesListType } from '../AppTypes'
 
 import { Movie } from './Movie'
 
-import style from '../css/movieListStyle.module.css'
+import style from '../css/moviesListStyle.module.css'
 
 export const MoviesList = ({moviesList}: {moviesList: MoviesListType}) => (
     <div className={style.movies}>

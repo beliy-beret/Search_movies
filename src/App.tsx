@@ -3,7 +3,7 @@ import { useState } from "react"
 import { initData } from "./initData"
 
 import { Header } from "./components/Header"
-import { MovieList } from "./components/MovieList"
+import { MoviesList } from "./components/MoviesList"
 import { Loading } from "./components/Loading"
 import { Search } from "./components/Search"
 
@@ -13,7 +13,7 @@ const App = () => {
   const [search, setSearch] = useState(initData);
   const [loading, setLoading] = useState(false);
   const [searchingValue, setSearchingValue] = useState("");
-  const handlerSearchingValue = (e) => setSearchingValue(e.target.value);
+  const handlerSearchingValue = (e: React.ChangeEvent<HTMLInputElement>) => setSearchingValue(e.target.value);
   
   const getSearchingValue = async() => {
     await setLoading(true);
@@ -31,7 +31,7 @@ const App = () => {
     <div className='app'>      
       <Header />
       <Search searchingValue={searchingValue} handlerSearchingValue={handlerSearchingValue} getSearchingValue={getSearchingValue} />
-      {loading ? <Loading /> : <MovieList moviesList={search} />}
+      {loading ? <Loading /> : <MoviesList moviesList={search} />}
     </div>
   );
 }
