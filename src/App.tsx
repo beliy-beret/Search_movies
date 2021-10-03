@@ -42,8 +42,8 @@ const App = () => {
   const [searchingValue, setSearchingValue] = useState("");
   const handlerSearchingValue = (e) => setSearchingValue(e.target.value);
   
-  const getSearchingValue = () => {
-    setLoading(true);
+  const getSearchingValue = async() => {
+    await setLoading(true);
     axios.get(`https://www.omdbapi.com/?s=${searchingValue.split(' ').join('+')}&apikey=4a3b711b`)     
     .then( response => { 
       if (response.data.Response === "True") {

@@ -6,7 +6,7 @@ const Search = (props) => {
         <div className='search'>
             <input type='search' name='search' value={props.searchingValue}
              placeholder='Enter title of movies' onChange={props.handlerSearchingValue} />
-             <button onClick={props.getSearchingValue}> Search </button>    
+            <button onClick={props.getSearchingValue}> Search </button>    
         </div>
     );
 };
