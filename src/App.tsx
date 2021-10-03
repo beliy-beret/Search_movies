@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import Header from "./components/Header";
+import { Header } from "./components/Header";
 import MovieList from "./components/MovieList";
 import Search from "./components/Search";
 import { Loading } from "./components/Loading"

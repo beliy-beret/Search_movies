@@ -4,9 +4,9 @@
     border: 1px solid wheat;
     width: 20%;        
 }
-.movie h3 {
+.title {
     margin: 1em;
 }
-.movie img {
+.poster img {
     width: 100%;    
 }
