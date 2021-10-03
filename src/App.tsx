@@ -7,7 +7,7 @@ import { MoviesList } from "./components/MoviesList"
 import { Loading } from "./components/Loading"
 import { Search } from "./components/Search"
 
-import './css/app.custom.css'
+import style from './css/appStyle.module.css'
 
 const App = () => {  
   const [search, setSearch] = useState(initData);
@@ -30,7 +30,7 @@ const App = () => {
       } setLoading(false);
     }    
   return (       
-    <div className='app'>      
+    <div className={style.app}>      
       <Header />
       <Search searchingValue={searchingValue} handlerSearchingValue={handlerSearchingValue} getSearchingValue={getSearchingValue} />
       {loading ? <Loading /> : <MoviesList moviesList={search} />}
